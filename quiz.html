@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th Grader Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header>
+        <h1>The State Of Tennessee's 5th Grade Students Evaluation Test</h1>
+    </header>
+    <h1>Methodology and Information Regarding The Test</h1>
+    <p>Tennessee highly values each and every one of our students education. As of recently, we have taken a
+        more statistical approach and would like to ensure all of our students recieve a quality education. To ensure this,
+        we have created the following test, which each completion will be recorded. We will use this data to modify our current
+        curriculum, in order to approach the strengths and weaknesses of our 5th grade student population as a unit. 
+        The Tennessee Department Of Education strongly supports the success of our future generations, so participation is mandated for all schools who recieve
+        financial aid from the state. 
+        <br><br> The Test is over the following topics:
+        <br><br> - Math
+        <br><br> - Science
+        <br><br> - English
+        <br><br> - History
+        <br><br><br> The following test contains eight questions, with two coming from each of the listed categories.
+        You have one attempt at each question, and each question is auto-graded. The questions are derived from the 
+        currently implemented curriculum. 
+
+    </p>
+    <h1>Test</h1>
+    <section id="quiz">
+        <article id="question-1">
+            <h2>Question 1: What is the last planet in our solar system?</h2>
+            <ul>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">Pluto</button></li>
+                <li><button class="button" onclick="checkAnswer('correct', this)">Uranus</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">Jupiter</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">None of these</button></li>
+            </ul>
+        </article>
+        <article id="question-2">
+            <h2>Question 2: Which amendment allows the right to own a firearm?</h2>
+            <ul>
+                <li><button class="button" onclick="checkAnswer('correct', this)">2nd</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">10th</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">3rd</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">7th</button></li>
+            </ul>
+        </article>
+
+
+        <article id="question-3">
+            <h2>Question 3: Who were the two sides that fought during the civil war?</h2>
+            <ul>
+                <li><button class="button" onclick="checkAnswer('correct', this)">Confederacy and Union</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">Axis and Allies</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">Farmers and Businesses</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">United States and Mexico</button></li>
+            </ul>
+        </article>
+
+        <article id="question-4">
+            <h2>Question 4: Water freezes at what temperature(in degrees fahenheit)? </h2>
+            <ul>
+                <li><button class="button" onclick="checkAnswer('correct', this)">32F</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">0F</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">80F</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">212F</button></li>
+            </ul>
+        </article>
+        <article id="question-5">
+            <h2>Question 5: What is 100 * 21.5 equal to?</h2>
+            <ul>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">2125.5</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">2100</button></li>
+                <li><button class="button" onclick="checkAnswer('correct', this)">2150</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">1775.75</button></li>
+            </ul>
+        </article>
+        <article id="question-6">
+            <h2>Question 6: What is 64/20 reduced to its simplest form? </h2>
+            <ul>
+                <li><button class="button" onclick="checkAnswer('correct', this)">16/5</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">32/4</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">16/4</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">48/5</button></li>
+            </ul>
+        </article>
+        <article id="question-7">
+            <h2>Question 7: What is this phrase an example of:<br><br>Sally sells seashells by the seashore</h2>
+            <ul>
+                <li><button class="button" onclick="checkAnswer('correct', this)">Alliteration</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">Synonyms</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">Onomatopoeia</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">None Of These</button></li>
+            </ul>
+        </article>
+        <article id="question-8">
+            <h2>Question 8: What part of speech is the following word?<br><br>Going</h2>
+            <ul>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">Location</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">Verb</button></li>
+                <li><button class="button" onclick="checkAnswer('incorrect', this)">Noun</button></li>
+                <li><button class="button" onclick="checkAnswer('correct', this)">Adjective</button></li>
+            </ul>
+        </article>
+        <button id="Grade" onclick="show_final_grade()">Show Final Grade</button>
+    </section>
+    <h1>About</h1>
+    <h3> This test was created as a result of the state falling below the median of all states within the United States.
+        With the negative feedback recieved from our prior implemented Common Core, we decided to obtain all of the data we could recieve,
+        in order to create a more directed and targeted system of education. With the recent bill passed by Govenor Bill Lee, we are extremely motivated
+        to create a curriculum that is better suited for our current population. Within the next ten years, we will use this data to ensure that our education
+        is within the top of the country, to ensure a better future for our children. We chose the four categories based on what we believed to be the most important
+        for a fifth grade student to learn, but we plan to implement more catagories and questions based on the feedback we recieve.
+        <br>
+        <br>
+        For Questions and/or Concerns:<br><br>  Email: TNDEPTEDUCATIONTESTING@Tennessee.edu<br><br> Phone: 901-123-TEST<br>
+
+    </h3>
+
+    <footer>
+        <p>Tennessee Department Of Education Testing LLC. All Rights Reserved</p>
+    </footer>
+    
+
+    <script src="quiz.js"></script>
+</body>
+</html>
+

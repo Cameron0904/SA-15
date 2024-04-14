@@ -1,0 +1,64 @@
+body, html{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    background: #ffffff;
+    color: #000000;
+}
+
+header {
+    background: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section#quiz {
+    padding: 50px;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+li {
+    margin: 10px 0;
+    padding: 5px
+}
+
+button.button {
+    padding: 10px 20px;
+    width: 20%;
+    font-size: 16px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #0077cc;
+    color: white;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px;
+}
+h1{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+}
+h3{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+}
+
